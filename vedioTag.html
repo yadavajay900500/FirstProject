@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedio And Audio Tags</title>
+
+</head>
+<body>
+    <div style="margin: auto;
+        padding: auto;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;>
+        <h3>The Audio Play</h3>
+        <audio controls >
+            <source src="song.mp3" type="audio/mp3">
+        </audio>
+        <h3>Play the Vedio</h3>
+        <button onclick="moveme()">click me</button>
+        <video   width="50%" height="50%" controls id="video" >
+
+            <source src="Meri Aashiqui Song - Rochak Kohli Feat. Jubin Nautiyal - Ihana D - Shree Anwar Sagar - Bhushan Kumar.mp4" type="">
+
+        </video>
+
+  </div>
+<script>
+    function moveme()
+    {
+        var changepositon= document.getElementById('video');
+        changepositon.style.position='absolute';
+        changepositon.style.top='20px';
+        changepositon.style.left='20px';
+        changepositon.style.width='200px';
+        changepositon.style.height='200px';
+
+    }
+</script>
+</body>
+</html>
